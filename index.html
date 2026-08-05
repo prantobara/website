@@ -252,7 +252,6 @@
             text-align: center;
         }
 
-        /* Video Section Styling */
         .video-container {
             max-width: 800px;
             margin: 0 auto;
@@ -269,6 +268,46 @@
             border-radius: 10px;
             outline: none;
             display: block;
+        }
+
+        /* Subscribe Section Styling */
+        .subscribe-section {
+            background: linear-gradient(135deg, var(--card-bg) 0%, #0f172a 100%);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            padding: 40px 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .subscribe-section p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .subscribe-form {
+            display: flex;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .subscribe-form input {
+            flex: 1;
+            min-width: 200px;
+            padding: 12px 18px;
+            border-radius: 25px;
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            outline: none;
+        }
+
+        .subscribe-form input:focus {
+            border-color: var(--accent-color);
         }
 
         .hobbies-container {
@@ -359,7 +398,7 @@
             <a href="#about">About</a>
             <a href="#gallery">Gallery</a>
             <a href="#video">Video</a>
-            <a href="#hobbies">Hobbies</a>
+            <a href="#subscribe">Subscribe</a>
             <a href="#contact">Contact</a>
             <button class="theme-btn" id="theme-toggle" title="Toggle Theme">
                 <i class="fas fa-moon"></i>
@@ -376,7 +415,7 @@
         
         <div class="social-links">
             <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.youtube.com/@PrantoBarai-d5n" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
             <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
@@ -442,6 +481,22 @@
                 <source src="lv_0_20260804200155.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section id="subscribe">
+        <div class="subscribe-section">
+            <h2 style="color: var(--accent-color); margin-bottom: 10px;">🔔 Subscribe for Updates</h2>
+            <p>Get notified directly in your inbox whenever I publish new content, photos, or videos!</p>
+            <form class="subscribe-form" action="https://formsubmit.co/Prantobarai866@gmail.com" method="POST">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_subject" value="New Subscriber Alert! 🚀">
+                
+                <input type="email" name="subscriber_email" placeholder="Enter your email address" required autocomplete="off">
+                <button type="submit" class="btn">Subscribe Now</button>
+            </form>
         </div>
     </section>
 
@@ -521,4 +576,4 @@
         });
     </script>
 </body>
-</html>
+    </html>
