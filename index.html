@@ -1,463 +1,2544 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pranto Barai | Official Website</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
 
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-    <style>
-        :root {
-            --bg-color: #030d1a;
-            --card-bg: rgba(15, 23, 42, 0.85);
-            --text-color: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent-color: #38bdf8;
-            --border-color: rgba(56, 189, 248, 0.2);
-            --like-color: #ef4444;
-            --save-color: #eab308;
-        }
+  <title>Pranto Barai | Official Website</title>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-            scroll-behavior: smooth;
-        }
+  <meta
+    name="description"
+    content="Pranto Barai-এর personal website, social links, photos, videos এবং games."
+  >
 
-        body {
-            background: linear-gradient(180deg, #020617 0%, #075985 40%, #0284c7 80%, #0369a1 100%);
-            background-attachment: fixed;
-            color: var(--text-color);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+  <meta name="author" content="Pranto Barai">
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 5%;
-            background-color: var(--card-bg);
-            backdrop-filter: blur(10px);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid var(--border-color);
-        }
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWAaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
 
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-            color: var(--accent-color);
-        }
+  <style>
+    :root {
+      --bg-top: #020617;
+      --bg-middle: #075985;
+      --bg-bottom: #0369a1;
 
-        .hero {
-            min-height: 75vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px 20px;
-        }
+      --card-bg: rgba(15, 23, 42, 0.82);
+      --card-bg-light: rgba(255, 255, 255, 0.08);
 
-        .profile-img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid var(--accent-color);
-            margin-bottom: 20px;
-            box-shadow: 0 4px 25px rgba(56, 189, 248, 0.4);
-        }
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --soft-muted: #94a3b8;
 
-        .hero h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
+      --accent: #38bdf8;
+      --accent-dark: #0284c7;
+      --purple: #8b5cf6;
+      --green: #22c55e;
+      --red: #ef4444;
+      --yellow: #eab308;
 
-        .hero h1 span {
-            color: var(--accent-color);
-        }
+      --border: rgba(56, 189, 248, 0.23);
+      --shadow: 0 18px 55px rgba(0, 0, 0, 0.25);
+    }
 
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin: 20px 0;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
 
-        .social-links a {
-            color: var(--text-color);
-            font-size: 20px;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: 0.3s;
-            text-decoration: none;
-        }
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      color: var(--text);
+      background:
+        radial-gradient(
+          circle at 10% 5%,
+          rgba(56, 189, 248, 0.18),
+          transparent 25%
+        ),
+        radial-gradient(
+          circle at 90% 15%,
+          rgba(139, 92, 246, 0.18),
+          transparent 25%
+        ),
+        linear-gradient(
+          180deg,
+          var(--bg-top) 0%,
+          var(--bg-middle) 48%,
+          var(--bg-bottom) 100%
+        );
+      background-attachment: fixed;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
 
-        .social-links a:hover {
-            color: var(--accent-color);
-            border-color: var(--accent-color);
-        }
+    body.menu-open {
+      overflow: hidden;
+    }
 
-        .btn-group {
-            display: flex;
-            gap: 15px;
-            margin-top: 10px;
-        }
+    img,
+    video,
+    iframe {
+      max-width: 100%;
+    }
 
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: var(--accent-color);
-            color: #0f172a;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: 0.3s;
-            border: none;
-            cursor: pointer;
-        }
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
 
-        .btn-outline {
-            background-color: transparent;
-            color: var(--accent-color);
-            border: 2px solid var(--accent-color);
-        }
+    button {
+      cursor: pointer;
+    }
 
-        section {
-            padding: 40px 5%;
-        }
+    a {
+      color: inherit;
+    }
 
-        .section-title {
-            text-align: center;
-            font-size: 28px;
-            margin-bottom: 25px;
-            color: var(--accent-color);
-        }
+    .container {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+    }
 
-        .feed-container {
-            background: var(--card-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 30px;
-        }
+    .hidden {
+      display: none !important;
+    }
 
-        .feed-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
+    /* LOADER */
 
-        .feed-box {
-            background: var(--card-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+    #pageLoader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: grid;
+      place-items: center;
+      align-content: center;
+      gap: 15px;
+      background: #020617;
+      transition: opacity 0.5s, visibility 0.5s;
+    }
 
-        .feed-box h3 {
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+    #pageLoader.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
 
-        .action-bar {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding-top: 15px;
-            margin-top: 15px;
-            border-top: 1px solid var(--border-color);
-        }
+    .loader-logo {
+      display: grid;
+      place-items: center;
+      width: 72px;
+      height: 72px;
+      border-radius: 22px;
+      color: white;
+      background: linear-gradient(135deg, var(--accent-dark), var(--purple));
+      box-shadow: 0 15px 35px rgba(56, 189, 248, 0.35);
+      font-size: 38px;
+      font-weight: 900;
+      animation: loaderPulse 1.2s infinite;
+    }
 
-        .action-btn {
-            background: none;
-            border: none;
-            color: var(--text-muted);
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            padding: 6px 10px;
-            border-radius: 20px;
-        }
+    .loader-bar {
+      width: 170px;
+      height: 4px;
+      overflow: hidden;
+      border-radius: 99px;
+      background: rgba(255, 255, 255, 0.12);
+    }
 
-        .action-btn.liked {
-            color: var(--like-color);
-        }
+    .loader-bar::after {
+      display: block;
+      width: 50%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--accent), var(--purple));
+      content: "";
+      animation: loaderMove 1s infinite;
+    }
 
-        .action-btn.saved {
-            color: var(--save-color);
-        }
+    .loader-text {
+      color: var(--soft-muted);
+      font-size: 13px;
+    }
 
-        .comment-section {
-            display: none;
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px dashed var(--border-color);
-        }
+    @keyframes loaderPulse {
+      50% {
+        transform: scale(1.08);
+      }
+    }
 
-        .comment-input-box {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
+    @keyframes loaderMove {
+      from {
+        transform: translateX(-150%);
+      }
 
-        .comment-input-box input {
-            flex: 1;
-            padding: 8px 12px;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            background: rgba(0, 0, 0, 0.3);
-            color: var(--text-color);
-            outline: none;
-        }
+      to {
+        transform: translateX(270%);
+      }
+    }
 
-        .comment-list {
-            max-height: 100px;
-            overflow-y: auto;
-            font-size: 13px;
-            color: var(--text-muted);
-        }
+    /* NAVBAR */
 
-        .comment-item {
-            background: rgba(0, 0, 0, 0.2);
-            padding: 6px 12px;
-            border-radius: 12px;
-            margin-top: 5px;
-        }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid var(--border);
+      background: rgba(2, 6, 23, 0.73);
+      backdrop-filter: blur(18px);
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: var(--card-bg);
-            color: var(--text-muted);
-            border-top: 1px solid var(--border-color);
-            font-size: 14px;
-        }
-    </style>
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      gap: 20px;
+    }
+
+    .logo {
+      color: var(--accent);
+      font-size: 20px;
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      display: inline-grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      margin-right: 7px;
+      border-radius: 11px;
+      color: white;
+      background: linear-gradient(135deg, var(--accent-dark), var(--purple));
+      vertical-align: middle;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .nav-menu a {
+      position: relative;
+      color: var(--muted);
+      font-size: 14px;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-menu a::after {
+      position: absolute;
+      right: 0;
+      bottom: -8px;
+      left: 0;
+      height: 2px;
+      border-radius: 99px;
+      background: var(--accent);
+      content: "";
+      transform: scaleX(0);
+      transition: transform 0.2s;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+      color: white;
+    }
+
+    .nav-menu a:hover::after,
+    .nav-menu a.active::after {
+      transform: scaleX(1);
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .nav-button {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      color: white;
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .menu-button {
+      display: none;
+      font-size: 20px;
+    }
+
+    /* COMMON */
+
+    section {
+      padding: 84px 0;
+    }
+
+    .section-heading {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .section-title {
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-size: clamp(28px, 5vw, 44px);
+    }
+
+    .section-subtitle {
+      max-width: 680px;
+      margin: 0 auto;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .section-label {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 11px;
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      color: #bae6fd;
+      background: rgba(56, 189, 248, 0.09);
+      font-size: 11px;
+      letter-spacing: 1.4px;
+    }
+
+    .glass-card {
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--card-bg);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 10px 18px;
+      border: 1px solid transparent;
+      border-radius: 25px;
+      color: #082f49;
+      background: var(--accent);
+      font-size: 14px;
+      font-weight: 800;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(56, 189, 248, 0.23);
+    }
+
+    .btn-outline {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: transparent;
+    }
+
+    .btn-purple {
+      color: white;
+      background: linear-gradient(135deg, var(--accent-dark), var(--purple));
+    }
+
+    .btn-green {
+      color: white;
+      background: linear-gradient(135deg, #15803d, var(--green));
+    }
+
+    .btn-small {
+      min-height: 37px;
+      padding: 8px 13px;
+      font-size: 12px;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 760px;
+      display: grid;
+      place-items: center;
+      padding: 95px 0 80px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.8fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .hero-content {
+      text-align: left;
+    }
+
+    .online-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      color: #bae6fd;
+      background: rgba(255, 255, 255, 0.06);
+      font-size: 12px;
+    }
+
+    .online-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 12px var(--green);
+    }
+
+    .hero h1 {
+      margin: 22px 0 15px;
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: 1.05;
+    }
+
+    .hero h1 span {
+      color: var(--accent);
+    }
+
+    .hero-description {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.85;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 27px;
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .social-links a {
+      display: grid;
+      place-items: center;
+      width: 43px;
+      height: 43px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      color: white;
+      background: rgba(255, 255, 255, 0.07);
+      font-size: 18px;
+      text-decoration: none;
+      transition: color 0.2s, background 0.2s, transform 0.2s;
+    }
+
+    .social-links a:hover {
+      color: #082f49;
+      background: var(--accent);
+      transform: translateY(-3px);
+    }
+
+    .hero-visual {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 480px;
+    }
+
+    .profile-card {
+      position: relative;
+      z-index: 2;
+      width: 310px;
+      padding: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 30px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(56, 189, 248, 0.25),
+          rgba(139, 92, 246, 0.25)
+        ),
+        var(--card-bg);
+      box-shadow: var(--shadow);
+      text-align: center;
+      transform: rotate(4deg);
+    }
+
+    .profile-top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 22px;
+      color: var(--soft-muted);
+      font-size: 12px;
+    }
+
+    .profile-status {
+      color: #86efac;
+    }
+
+    .profile-img-box {
+      width: 190px;
+      height: 190px;
+      margin: 0 auto 18px;
+    }
+
+    .profile-img {
+      width: 100%;
+      height: 100%;
+      border: 4px solid rgba(255, 255, 255, 0.25);
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 15px 38px rgba(56, 189, 248, 0.35);
+    }
+
+    .profile-placeholder {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      color: white;
+      background: linear-gradient(135deg, var(--accent-dark), var(--purple));
+      font-size: 78px;
+      font-weight: 900;
+    }
+
+    .profile-card h2 {
+      margin-bottom: 4px;
+      font-size: 27px;
+    }
+
+    .profile-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .profile-note {
+      margin-top: 17px;
+      color: #bae6fd;
+      font-size: 12px;
+    }
+
+    .ring {
+      position: absolute;
+      border: 1px solid rgba(56, 189, 248, 0.24);
+      border-radius: 50%;
+      animation: spin 20s linear infinite;
+    }
+
+    .ring-one {
+      width: 420px;
+      height: 420px;
+    }
+
+    .ring-two {
+      width: 520px;
+      height: 280px;
+      transform: rotate(52deg);
+      animation-direction: reverse;
+      animation-duration: 24s;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .floating-label {
+      position: absolute;
+      z-index: 3;
+      padding: 10px 13px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: white;
+      background: rgba(15, 23, 42, 0.86);
+      box-shadow: var(--shadow);
+      font-size: 12px;
+      animation: floatLabel 3s ease-in-out infinite;
+    }
+
+    .floating-one {
+      top: 62px;
+      left: -12px;
+    }
+
+    .floating-two {
+      top: 175px;
+      right: -25px;
+      animation-delay: 0.8s;
+    }
+
+    .floating-three {
+      bottom: 66px;
+      left: 8px;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes floatLabel {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-11px);
+      }
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .about-card {
+      padding: 28px;
+    }
+
+    .about-card h3 {
+      margin-bottom: 13px;
+      font-size: 23px;
+    }
+
+    .about-card p {
+      margin-bottom: 13px;
+      color: var(--muted);
+      line-height: 1.85;
+    }
+
+    .personal-info {
+      display: grid;
+      gap: 13px;
+      margin-top: 20px;
+    }
+
+    .personal-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      padding-bottom: 11px;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    .personal-row span:first-child {
+      color: var(--soft-muted);
+    }
+
+    .personal-row span:last-child {
+      color: white;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    /* MEDIA */
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .media-card {
+      padding: 24px;
+    }
+
+    .media-card h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .media-card > p {
+      margin-bottom: 18px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .media-card img,
+    .media-card video {
+      display: block;
+      width: 100%;
+      max-height: 350px;
+      border-radius: 14px;
+      object-fit: cover;
+      background: #020617;
+    }
+
+    .media-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .media-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 14px;
+    }
+
+    .media-item {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 1;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: #020617;
+    }
+
+    .media-item img,
+    .media-item video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .media-item img {
+      cursor: zoom-in;
+      transition: transform 0.3s;
+    }
+
+    .media-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .media-empty {
+      grid-column: 1 / -1;
+      padding: 38px 18px;
+      border: 1px dashed var(--border);
+      border-radius: 16px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .upload-note {
+      margin-top: 17px;
+      padding: 13px;
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      border-radius: 12px;
+      color: #fed7aa;
+      background: rgba(249, 115, 22, 0.08);
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+    /* GAMES */
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .game-card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--card-bg);
+      box-shadow: var(--shadow);
+      transition: transform 0.25s, border-color 0.25s;
+    }
+
+    .game-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-7px);
+    }
+
+    .game-cover {
+      display: grid;
+      place-items: center;
+      height: 175px;
+      color: white;
+      font-size: 58px;
+    }
+
+    .game-cover-blue {
+      background: linear-gradient(135deg, #1d4ed8, #38bdf8);
+    }
+
+    .game-cover-purple {
+      background: linear-gradient(135deg, #6d28d9, #c084fc);
+    }
+
+    .game-cover-green {
+      background: linear-gradient(135deg, #15803d, #4ade80);
+    }
+
+    .game-body {
+      padding: 22px;
+    }
+
+    .game-body h3 {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .game-body p {
+      min-height: 52px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .game-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    /* FEEDS */
+
+    .feed-container {
+      padding: 22px;
+      margin-bottom: 22px;
+    }
+
+    .feed-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .feed-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 280px;
+      padding: 22px;
+    }
+
+    .feed-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      font-size: 19px;
+    }
+
+    .youtube-title {
+      color: #ff4d4d;
+    }
+
+    .facebook-title {
+      color: #60a5fa;
+    }
+
+    .tiktok-title {
+      color: #67e8f9;
+    }
+
+    .feed-placeholder {
+      display: grid;
+      place-items: center;
+      min-height: 135px;
+      padding: 20px;
+      border: 1px dashed var(--border);
+      border-radius: 13px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .action-bar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 7px;
+      padding-top: 15px;
+      margin-top: 17px;
+      border-top: 1px solid var(--border);
+    }
+
+    .action-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 10px;
+      border: 0;
+      border-radius: 20px;
+      color: var(--soft-muted);
+      background: transparent;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .action-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .action-btn.liked {
+      color: var(--red);
+    }
+
+    .action-btn.saved {
+      color: var(--yellow);
+    }
+
+    .comment-section {
+      display: none;
+      padding-top: 15px;
+      margin-top: 15px;
+      border-top: 1px dashed var(--border);
+    }
+
+    .comment-section.show {
+      display: block;
+    }
+
+    .comment-input-box {
+      display: flex;
+      gap: 9px;
+    }
+
+    .comment-input-box input {
+      min-width: 0;
+      flex: 1;
+      padding: 9px 12px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      outline: none;
+      color: white;
+      background: rgba(0, 0, 0, 0.28);
+    }
+
+    .comment-list {
+      max-height: 120px;
+      overflow-y: auto;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .comment-item {
+      padding: 7px 11px;
+      margin-top: 6px;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.22);
+    }
+
+    /* CONTACT */
+
+    .contact-card {
+      max-width: 650px;
+      padding: 27px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      outline: none;
+      color: white;
+      background: rgba(0, 0, 0, 0.28);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.12);
+    }
+
+    .form-group textarea {
+      min-height: 135px;
+      resize: vertical;
+    }
+
+    .form-message {
+      margin-top: 12px;
+      color: #86efac;
+      font-size: 13px;
+    }
+
+    /* LIGHTBOX */
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 3000;
+      display: none;
+      place-items: center;
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.88);
+    }
+
+    .lightbox.show {
+      display: grid;
+    }
+
+    .lightbox img {
+      max-width: 95vw;
+      max-height: 86vh;
+      border: 2px solid rgba(255, 255, 255, 0.22);
+      border-radius: 15px;
+      object-fit: contain;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 50%;
+      color: white;
+      background: var(--red);
+      font-size: 24px;
+    }
+
+    /* TOAST */
+
+    .toast {
+      position: fixed;
+      right: 20px;
+      bottom: 22px;
+      z-index: 5000;
+      max-width: 320px;
+      padding: 13px 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: white;
+      background: #111827;
+      box-shadow: var(--shadow);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(12px);
+      transition: opacity 0.3s, transform 0.3s;
+      font-size: 13px;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 28px 0 20px;
+      border-top: 1px solid var(--border);
+      color: var(--soft-muted);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    /* REVEAL */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s, transform 0.7s;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .about-grid,
+      .media-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+
+      .hero-description {
+        margin: 0 auto;
+      }
+
+      .hero-actions,
+      .social-links {
+        justify-content: center;
+      }
+
+      .game-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero-visual {
+        min-height: 440px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .menu-button {
+        display: grid;
+      }
+
+      .nav-menu {
+        position: absolute;
+        top: 72px;
+        right: 4%;
+        left: 4%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: #0f172a;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-menu.open {
+        display: flex;
+      }
+
+      .nav-menu a {
+        padding: 13px 10px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .nav-menu a:last-child {
+        border-bottom: 0;
+      }
+
+      .nav-menu a::after {
+        display: none;
+      }
+
+      .feed-grid,
+      .game-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 680px;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: min(94%, 1180px);
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+      }
+
+      .profile-card {
+        width: 265px;
+      }
+
+      .profile-img-box {
+        width: 160px;
+        height: 160px;
+      }
+
+      .ring-one {
+        width: 300px;
+        height: 300px;
+      }
+
+      .ring-two {
+        width: 350px;
+        height: 210px;
+      }
+
+      .floating-one {
+        top: 32px;
+        left: 0;
+      }
+
+      .floating-two {
+        top: 145px;
+        right: 0;
+      }
+
+      .floating-three {
+        bottom: 30px;
+        left: 0;
+      }
+
+      .action-btn {
+        font-size: 12px;
+      }
+
+      .comment-input-box {
+        flex-direction: column;
+      }
+
+      .comment-input-box .btn {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <header>
-        <div class="logo">Pranto Barai.</div>
-    </header>
+  <!-- LOADER -->
+
+  <div id="pageLoader">
+    <div class="loader-logo">P</div>
+    <div class="loader-bar"></div>
+    <div class="loader-text">Loading Pranto Barai...</div>
+  </div>
+
+  <!-- HEADER -->
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="#home" class="logo">
+        <span class="logo-mark">P</span>
+        Pranto Barai<span>.</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#media">Media</a>
+        <a href="#games">Games</a>
+        <a href="#social-feeds">Feeds</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button
+          class="nav-button menu-button"
+          id="menuButton"
+          aria-label="Open menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
 
     <section class="hero" id="home">
-        <img src="images/profile.png" alt="Pranto Barai" class="profile-img" onerror="this.src='https://via.placeholder.com/140'">
-        <h1>Hi, I'm <span>Pranto Barai</span></h1>
-        <p style="color: var(--text-muted); max-width: 500px;">Welcome to my personal portal! Explore, Like, Comment, and Share my latest content below.</p>
-        
-        <div class="social-links">
-            <a href="https://www.facebook.com/share/1DPjtHLRmh/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.youtube.com/@PrantoBarai-d5n" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://tiktok.com/@pb.pran0" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+          <div class="online-badge">
+            <span class="online-dot"></span>
+            Welcome to my personal portal
+          </div>
+
+          <h1>
+            Hi, I'm
+            <span>Pranto Barai</span>
+          </h1>
+
+          <p class="hero-description">
+            আমার personal website-এ স্বাগতম।
+            এখানে আমার social links, photos, videos এবং games দেখতে পারবেন।
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn">
+              <i class="fa-solid fa-envelope"></i>
+              Contact Me
+            </a>
+
+            <a
+              href="CV.pdf"
+              download
+              class="btn btn-outline"
+            >
+              <i class="fa-solid fa-download"></i>
+              Download CV
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/share/1DPjtHLRmh/"
+              target="_blank"
+              rel="noopener"
+              title="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/@PrantoBarai-d5n"
+              target="_blank"
+              rel="noopener"
+              title="YouTube"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a
+              href="https://tiktok.com/@pb.pran0"
+              target="_blank"
+              rel="noopener"
+              title="TikTok"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+
         </div>
 
-        <div class="btn-group">
-            <a href="#contact" class="btn">Contact Me</a>
-            <a href="CV.pdf" download class="btn btn-outline"><i class="fa-solid fa-download"></i> Download CV</a>
+        <div class="hero-visual reveal">
+
+          <div class="ring ring-one"></div>
+          <div class="ring ring-two"></div>
+
+          <div class="profile-card">
+
+            <div class="profile-top">
+              <span class="profile-status">
+                <i class="fa-solid fa-circle"></i>
+                Personal Hub
+              </span>
+
+              <span>2026</span>
+            </div>
+
+            <div class="profile-img-box">
+              <img
+                src="images/profile.png"
+                alt="Pranto Barai"
+                class="profile-img"
+                onerror="
+                  this.style.display='none';
+                  document.getElementById('profilePlaceholder').style.display='flex';
+                "
+              >
+
+              <div
+                class="profile-placeholder"
+                id="profilePlaceholder"
+              >
+                P
+              </div>
+            </div>
+
+            <h2>Pranto Barai</h2>
+            <p>Content Creator & Video Producer</p>
+
+            <div class="profile-note">
+              Photos • Videos • Games
+            </div>
+
+          </div>
+
+          <div class="floating-label floating-one">
+            📸 My Photos
+          </div>
+
+          <div class="floating-label floating-two">
+            🎬 My Videos
+          </div>
+
+          <div class="floating-label floating-three">
+            🎮 My Games
+          </div>
+
         </div>
+
+      </div>
     </section>
+
+    <!-- ABOUT -->
 
     <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div style="background: var(--card-bg); padding: 20px; border-radius: 16px; border: 1px solid var(--border-color); max-width: 800px; margin: 0 auto; text-align: center;">
-            <p style="margin-bottom: 8px;"><strong>Name:</strong> Pranto Barai</p>
-            <p style="margin-bottom: 8px;"><strong>Focus:</strong> Content Creation & Video Production</p>
-            <p><strong>Location:</strong> Gopalganj, Bangladesh</p>
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="section-label">ABOUT ME</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            আমার সম্পর্কে কিছু সাধারণ তথ্য।
+          </p>
         </div>
+
+        <div class="about-grid">
+
+          <div class="glass-card about-card reveal">
+            <h3>Welcome to my website</h3>
+
+            <p>
+              এটি আমার personal portal। এখানে আমার content,
+              social media এবং ব্যক্তিগত project-এর তথ্য পাওয়া যাবে।
+            </p>
+
+            <p>
+              নতুন ছবি, ভিডিও এবং game link আমি এই website-এ যোগ করতে পারব।
+            </p>
+
+            <a href="#media" class="btn btn-small btn-purple">
+              View My Media
+            </a>
+          </div>
+
+          <div class="glass-card about-card reveal">
+            <h3>Personal Information</h3>
+
+            <div class="personal-info">
+              <div class="personal-row">
+                <span>Name</span>
+                <span>Pranto Barai</span>
+              </div>
+
+              <div class="personal-row">
+                <span>Focus</span>
+                <span>Content Creation</span>
+              </div>
+
+              <div class="personal-row">
+                <span>Location</span>
+                <span>Gopalganj, Bangladesh</span>
+              </div>
+
+              <div class="personal-row">
+                <span>Website</span>
+                <span>Personal Portal</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </section>
 
+    <!-- MEDIA -->
+
+    <section id="media">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="section-label">MY MEDIA</span>
+          <h2 class="section-title">Photos & Videos</h2>
+          <p class="section-subtitle">
+            আপনার upload করা media এখানে সাজিয়ে রাখতে পারবেন।
+          </p>
+        </div>
+
+        <div class="media-grid">
+
+          <!-- PHOTO -->
+
+          <div class="glass-card media-card reveal">
+            <h3>
+              <i class="fa-solid fa-image"></i>
+              My Photos
+            </h3>
+
+            <p>
+              এই ছবিগুলো দেখাতে `images` folder-এ file রাখুন।
+            </p>
+
+            <div class="media-gallery">
+
+              <div class="media-item">
+                <img
+                  src="images/photo-1.jpg"
+                  alt="Pranto photo 1"
+                  onerror="this.parentElement.classList.add('hidden')"
+                >
+              </div>
+
+              <div class="media-item">
+                <img
+                  src="images/photo-2.jpg"
+                  alt="Pranto photo 2"
+                  onerror="this.parentElement.classList.add('hidden')"
+                >
+              </div>
+
+              <div class="media-item">
+                <img
+                  src="images/photo-3.jpg"
+                  alt="Pranto photo 3"
+                  onerror="this.parentElement.classList.add('hidden')"
+                >
+              </div>
+
+              <div class="media-empty">
+                `images/photo-1.jpg`, `photo-2.jpg`
+                অথবা `photo-3.jpg` file যোগ করুন।
+              </div>
+
+            </div>
+
+            <div class="media-actions">
+              <label
+                for="photoUpload"
+                class="btn btn-small btn-purple"
+              >
+                <i class="fa-solid fa-upload"></i>
+                Preview Photo
+              </label>
+
+              <input
+                type="file"
+                id="photoUpload"
+                accept="image/*"
+                multiple
+                hidden
+              >
+            </div>
+
+            <div
+              class="media-gallery"
+              id="photoPreview"
+              style="margin-top: 15px;"
+            ></div>
+
+            <div class="upload-note">
+              Preview button দিয়ে select করা ছবি শুধু আপনার browser-এ দেখা যাবে।
+              permanent করতে GitHub-এর `images` folder-এ upload করুন।
+            </div>
+          </div>
+
+          <!-- VIDEO -->
+
+          <div class="glass-card media-card reveal">
+            <h3>
+              <i class="fa-solid fa-video"></i>
+              My Videos
+            </h3>
+
+            <p>
+              MP4 video `videos` folder-এ রেখে নিচের মতো link দিন।
+            </p>
+
+            <div class="media-gallery">
+
+              <div class="media-item">
+                <video controls preload="metadata">
+                  <source
+                    src="videos/video-1.mp4"
+                    type="video/mp4"
+                  >
+                  আপনার browser video support করে না।
+                </video>
+              </div>
+
+              <div class="media-item">
+                <video controls preload="metadata">
+                  <source
+                    src="videos/video-2.mp4"
+                    type="video/mp4"
+                  >
+                  আপনার browser video support করে না।
+                </video>
+              </div>
+
+              <div class="media-empty">
+                `videos/video-1.mp4` অথবা
+                `videos/video-2.mp4` file যোগ করুন।
+              </div>
+
+            </div>
+
+            <div class="media-actions">
+              <label
+                for="videoUpload"
+                class="btn btn-small btn-purple"
+              >
+                <i class="fa-solid fa-upload"></i>
+                Preview Video
+              </label>
+
+              <input
+                type="file"
+                id="videoUpload"
+                accept="video/*"
+                multiple
+                hidden
+              >
+            </div>
+
+            <div
+              id="videoPreview"
+              class="media-gallery"
+              style="margin-top: 15px;"
+            ></div>
+
+            <div class="upload-note">
+              বড় video GitHub-এ না রেখে YouTube-এ upload করে embed link ব্যবহার করা ভালো।
+            </div>
+          </div>
+
+        </div>
+
+        <!-- YOUTUBE EMBED -->
+
+        <div
+          class="glass-card media-card reveal"
+          style="margin-top: 20px;"
+        >
+          <h3>
+            <i class="fa-brands fa-youtube"></i>
+            YouTube Video
+          </h3>
+
+          <p>
+            নিচের `VIDEO_ID`-এর জায়গায় আপনার YouTube video ID বসান।
+          </p>
+
+          <div
+            style="
+              position: relative;
+              width: 100%;
+              padding-bottom: 56.25%;
+              overflow: hidden;
+              border-radius: 15px;
+              background: #020617;
+            "
+          >
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID"
+              title="Pranto Barai YouTube Video"
+              allowfullscreen
+              style="
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+              "
+            ></iframe>
+          </div>
+
+          <div class="upload-note">
+            আপনার YouTube link যদি হয়:
+            `https://www.youtube.com/watch?v=ABC123`,
+            তাহলে embed URL হবে:
+            `https://www.youtube.com/embed/ABC123`
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GAMES -->
+
+    <section id="games">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="section-label">MY GAMES</span>
+          <h2 class="section-title">Games</h2>
+          <p class="section-subtitle">
+            নিজের game খেলুন, download করুন অথবা external game link যোগ করুন।
+          </p>
+        </div>
+
+        <div class="game-grid">
+
+          <!-- BROWSER GAME -->
+
+          <article class="game-card reveal">
+
+            <div class="game-cover game-cover-blue">
+              🧠
+            </div>
+
+            <div class="game-body">
+              <h3>My Browser Game</h3>
+
+              <p>
+                আপনার game folder-এর index.html সরাসরি open হবে।
+              </p>
+
+              <div class="game-actions">
+                <a
+                  href="games/my-game/index.html"
+                  class="btn btn-small btn-purple"
+                >
+                  <i class="fa-solid fa-gamepad"></i>
+                  Play Game
+                </a>
+
+                <button
+                  class="btn btn-small btn-outline copy-link"
+                  data-link="games/my-game/index.html"
+                >
+                  Copy Link
+                </button>
+              </div>
+            </div>
+
+          </article>
+
+          <!-- APK GAME -->
+
+          <article class="game-card reveal">
+
+            <div class="game-cover game-cover-purple">
+              🎮
+            </div>
+
+            <div class="game-body">
+              <h3>Android Game</h3>
+
+              <p>
+                APK file download করার জন্য এই button ব্যবহার করুন।
+              </p>
+
+              <div class="game-actions">
+                <a
+                  href="downloads/my-game.apk"
+                  download
+                  class="btn btn-small btn-green"
+                >
+                  <i class="fa-solid fa-download"></i>
+                  Download APK
+                </a>
+              </div>
+            </div>
+
+          </article>
+
+          <!-- EXTERNAL GAME -->
+
+          <article class="game-card reveal">
+
+            <div class="game-cover game-cover-green">
+              🚀
+            </div>
+
+            <div class="game-body">
+              <h3>External Game</h3>
+
+              <p>
+                অন্য website-এর game link এখানে বসান।
+              </p>
+
+              <div class="game-actions">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-small btn-green"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Open Game
+                </a>
+              </div>
+            </div>
+
+          </article>
+
+        </div>
+
+        <div class="upload-note" style="margin-top: 22px;">
+          Browser game-এর link:
+          `games/my-game/index.html`
+          <br>
+          APK link:
+          `downloads/my-game.apk`
+          <br>
+          External game-এর link:
+          `https://example.com`
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SOCIAL FEEDS -->
+
     <section id="social-feeds">
-        <h2 class="section-title">Live Content Feed</h2>
-        <p style="text-align: center; color: var(--text-muted); margin-bottom: 25px;">Interact directly with my posts!</p>
+      <div class="container">
 
-        <div class="feed-container">
-            <h3 style="color: #ff0000; margin-bottom: 15px;"><i class="fa-brands fa-youtube"></i> Latest YouTube Content</h3>
-            
-            <div class="elfsight-app-youtube-feed">
-                <p style="color: var(--text-muted); text-align: center; font-size: 14px;">[ YouTube Live Feed ]</p>
+        <div class="section-heading reveal">
+          <span class="section-label">SOCIAL MEDIA</span>
+          <h2 class="section-title">Live Content Feed</h2>
+          <p class="section-subtitle">
+            আপনার social media profile-এর link এবং basic interaction।
+          </p>
+        </div>
+
+        <div class="glass-card feed-container reveal">
+
+          <h3 class="feed-title youtube-title">
+            <i class="fa-brands fa-youtube"></i>
+            Latest YouTube Content
+          </h3>
+
+          <div class="feed-placeholder">
+            YouTube channel দেখতে নিচের button ব্যবহার করুন।
+          </div>
+
+          <div class="action-bar">
+            <button
+              class="action-btn"
+              onclick="toggleLike(this)"
+            >
+              <i class="fa-regular fa-heart"></i>
+              <span class="like-count">124</span>
+            </button>
+
+            <button
+              class="action-btn"
+              onclick="toggleComment('youtubeComment')"
+            >
+              <i class="fa-regular fa-comment"></i>
+              Comment
+            </button>
+
+            <button
+              class="action-btn"
+              onclick="sharePost('https://www.youtube.com/@PrantoBarai-d5n')"
+            >
+              <i class="fa-solid fa-share"></i>
+              Share
+            </button>
+
+            <button
+              class="action-btn"
+              onclick="toggleSave(this)"
+            >
+              <i class="fa-regular fa-bookmark"></i>
+              Save
+            </button>
+          </div>
+
+          <div
+            class="comment-section"
+            id="youtubeComment"
+          >
+            <div class="comment-input-box">
+              <input
+                type="text"
+                id="youtubeCommentInput"
+                placeholder="Write a comment..."
+              >
+
+              <button
+                class="btn btn-small"
+                onclick="
+                  addComment(
+                    'youtubeCommentInput',
+                    'youtubeCommentList'
+                  )
+                "
+              >
+                Post
+              </button>
             </div>
 
-            <div class="action-bar">
-                <button class="action-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> <span class="like-count">124</span></button>
-                <button class="action-btn" onclick="toggleComment('yt-comment')"><i class="fa-regular fa-comment"></i> Comment</button>
-                <button class="action-btn" onclick="sharePost('https://www.youtube.com/@PrantoBarai-d5n')"><i class="fa-solid fa-share"></i> Share</button>
-                <button class="action-btn" onclick="toggleSave(this)"><i class="fa-regular fa-bookmark"></i> Save</button>
-            </div>
+            <div
+              class="comment-list"
+              id="youtubeCommentList"
+            ></div>
+          </div>
 
-            <div id="yt-comment" class="comment-section">
-                <div class="comment-input-box">
-                    <input type="text" placeholder="Write a comment..." id="input-yt-comment">
-                    <button class="btn" style="padding: 6px 15px; font-size: 13px;" onclick="addComment('input-yt-comment', 'list-yt-comment')">Post</button>
-                </div>
-                <div class="comment-list" id="list-yt-comment"></div>
-            </div>
+          <div style="margin-top: 18px; text-align: center;">
+            <a
+              href="https://www.youtube.com/@PrantoBarai-d5n"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-small"
+            >
+              Open YouTube Channel
+            </a>
+          </div>
+
         </div>
 
         <div class="feed-grid">
-            
-            <div class="feed-box">
-                <div>
-                    <h3 style="color: #1877f2;"><i class="fa-brands fa-facebook"></i> Facebook Updates</h3>
-                    <div class="elfsight-app-facebook-feed">
-                        <p style="color: var(--text-muted); font-size: 14px;">[ Facebook Feed ]</p>
-                    </div>
-                </div>
 
-                <div>
-                    <div class="action-bar">
-                        <button class="action-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> <span class="like-count">89</span></button>
-                        <button class="action-btn" onclick="toggleComment('fb-comment')"><i class="fa-regular fa-comment"></i> Comment</button>
-                        <button class="action-btn" onclick="sharePost('https://www.facebook.com/share/1DPjtHLRmh/')"><i class="fa-solid fa-share"></i> Share</button>
-                        <button class="action-btn" onclick="toggleSave(this)"><i class="fa-regular fa-bookmark"></i> Save</button>
-                    </div>
+          <div class="glass-card feed-box reveal">
 
-                    <div id="fb-comment" class="comment-section">
-                        <div class="comment-input-box">
-                            <input type="text" placeholder="Write a comment..." id="input-fb-comment">
-                            <button class="btn" style="padding: 6px 15px; font-size: 13px;" onclick="addComment('input-fb-comment', 'list-fb-comment')">Post</button>
-                        </div>
-                        <div class="comment-list" id="list-fb-comment"></div>
-                    </div>
-                </div>
+            <div>
+              <h3 class="feed-title facebook-title">
+                <i class="fa-brands fa-facebook"></i>
+                Facebook Updates
+              </h3>
+
+              <div class="feed-placeholder">
+                Facebook profile দেখতে button চাপুন।
+              </div>
             </div>
 
-            <div class="feed-box">
-                <div>
-                    <h3 style="color: #38bdf8;"><i class="fa-brands fa-tiktok"></i> TikTok Reels</h3>
-                    <div class="elfsight-app-tiktok-feed">
-                        <p style="color: var(--text-muted); font-size: 14px;">[ TikTok Feed ]</p>
-                    </div>
+            <div>
+              <div class="action-bar">
+                <button
+                  class="action-btn"
+                  onclick="toggleLike(this)"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <span class="like-count">89</span>
+                </button>
+
+                <button
+                  class="action-btn"
+                  onclick="toggleComment('facebookComment')"
+                >
+                  <i class="fa-regular fa-comment"></i>
+                  Comment
+                </button>
+
+                <button
+                  class="action-btn"
+                  onclick="sharePost('https://www.facebook.com/share/1DPjtHLRmh/')"
+                >
+                  <i class="fa-solid fa-share"></i>
+                  Share
+                </button>
+
+                <button
+                  class="action-btn"
+                  onclick="toggleSave(this)"
+                >
+                  <i class="fa-regular fa-bookmark"></i>
+                  Save
+                </button>
+              </div>
+
+              <div
+                class="comment-section"
+                id="facebookComment"
+              >
+                <div class="comment-input-box">
+                  <input
+                    type="text"
+                    id="facebookCommentInput"
+                    placeholder="Write a comment..."
+                  >
+
+                  <button
+                    class="btn btn-small"
+                    onclick="
+                      addComment(
+                        'facebookCommentInput',
+                        'facebookCommentList'
+                      )
+                    "
+                  >
+                    Post
+                  </button>
                 </div>
 
-                <div>
-                    <div class="action-bar">
-                        <button class="action-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> <span class="like-count">210</span></button>
-                        <button class="action-btn" onclick="toggleComment('tt-comment')"><i class="fa-regular fa-comment"></i> Comment</button>
-                        <button class="action-btn" onclick="sharePost('https://tiktok.com/@pb.pran0')"><i class="fa-solid fa-share"></i> Share</button>
-                        <button class="action-btn" onclick="toggleSave(this)"><i class="fa-regular fa-bookmark"></i> Save</button>
-                    </div>
+                <div
+                  class="comment-list"
+                  id="facebookCommentList"
+                ></div>
+              </div>
 
-                    <div id="tt-comment" class="comment-section">
-                        <div class="comment-input-box">
-                            <input type="text" placeholder="Write a comment..." id="input-tt-comment">
-                            <button class="btn" style="padding: 6px 15px; font-size: 13px;" onclick="addComment('input-tt-comment', 'list-tt-comment')">Post</button>
-                        </div>
-                        <div class="comment-list" id="list-tt-comment"></div>
-                    </div>
-                </div>
+              <div style="margin-top: 18px; text-align: center;">
+                <a
+                  href="https://www.facebook.com/share/1DPjtHLRmh/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-small btn-purple"
+                >
+                  Open Facebook
+                </a>
+              </div>
             </div>
+
+          </div>
+
+          <div class="glass-card feed-box reveal">
+
+            <div>
+              <h3 class="feed-title tiktok-title">
+                <i class="fa-brands fa-tiktok"></i>
+                TikTok Reels
+              </h3>
+
+              <div class="feed-placeholder">
+                TikTok profile দেখতে button চাপুন।
+              </div>
+            </div>
+
+            <div>
+              <div class="action-bar">
+                <button
+                  class="action-btn"
+                  onclick="toggleLike(this)"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <span class="like-count">210</span>
+                </button>
+
+                <button
+                  class="action-btn"
+                  onclick="toggleComment('tiktokComment')"
+                >
+                  <i class="fa-regular fa-comment"></i>
+                  Comment
+                </button>
+
+                <button
+                  class="action-btn"
+                  onclick="sharePost('https://tiktok.com/@pb.pran0')"
+                >
+                  <i class="fa-solid fa-share"></i>
+                  Share
+                </button>
+
+                <button
+                  class="action-btn"
+                  onclick="toggleSave(this)"
+                >
+                  <i class="fa-regular fa-bookmark"></i>
+                  Save
+                </button>
+              </div>
+
+              <div
+                class="comment-section"
+                id="tiktokComment"
+              >
+                <div class="comment-input-box">
+                  <input
+                    type="text"
+                    id="tiktokCommentInput"
+                    placeholder="Write a comment..."
+                  >
+
+                  <button
+                    class="btn btn-small"
+                    onclick="
+                      addComment(
+                        'tiktokCommentInput',
+                        'tiktokCommentList'
+                      )
+                    "
+                  >
+                    Post
+                  </button>
+                </div>
+
+                <div
+                  class="comment-list"
+                  id="tiktokCommentList"
+                ></div>
+              </div>
+
+              <div style="margin-top: 18px; text-align: center;">
+                <a
+                  href="https://tiktok.com/@pb.pran0"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-small btn-purple"
+                >
+                  Open TikTok
+                </a>
+              </div>
+            </div>
+
+          </div>
 
         </div>
+
+      </div>
     </section>
+
+    <!-- CONTACT -->
 
     <section id="contact">
-        <h2 class="section-title">Contact Me</h2>
-        <div style="max-width: 500px; margin: 0 auto; background: var(--card-bg); padding: 25px; border-radius: 16px; border: 1px solid var(--border-color);">
-            <form action="https://formsubmit.co/Prantobarai866@gmail.com" method="POST">
-                <div style="margin-bottom: 15px;">
-                    <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.3); color: var(--text-color);">
-                </div>
-                <div style="margin-bottom: 15px;">
-                    <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.3); color: var(--text-color);">
-                </div>
-                <div style="margin-bottom: 15px;">
-                    <textarea name="message" rows="4" placeholder="Your Message" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.3); color: var(--text-color);"></textarea>
-                </div>
-                <button type="submit" class="btn" style="width: 100%;">Send Message</button>
-            </form>
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="section-label">CONTACT ME</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-subtitle">
+            নিচের form ব্যবহার করে message পাঠাতে পারেন।
+          </p>
         </div>
+
+        <div class="glass-card contact-card reveal">
+
+          <form
+            action="https://formsubmit.co/Prantobarai866@gmail.com"
+            method="POST"
+          >
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New message from Pranto Barai Website"
+            >
+
+            <input
+              type="hidden"
+              name="_captcha"
+              value="false"
+            >
+
+            <input
+              type="hidden"
+              name="_template"
+              value="table"
+            >
+
+            <input
+              type="hidden"
+              name="_next"
+              value="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/#contact"
+            >
+
+            <div class="form-group">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="btn"
+              style="width: 100%;"
+            >
+              <i class="fa-solid fa-paper-plane"></i>
+              Send Message
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Pranto Barai. All rights reserved.</p>
-    </footer>
+  </main>
 
-    <script>
-        // Like Button Toggle
-        function toggleLike(btn) {
-            const icon = btn.querySelector('i');
-            const countSpan = btn.querySelector('.like-count');
-            let count = parseInt(countSpan.textContent);
+  <!-- FOOTER -->
 
-            if (btn.classList.contains('liked')) {
-                btn.classList.remove('liked');
-                icon.className = 'fa-regular fa-heart';
-                countSpan.textContent = count - 1;
-            } else {
-                btn.classList.add('liked');
-                icon.className = 'fa-solid fa-heart';
-                countSpan.textContent = count + 1;
+  <footer>
+    <div class="container">
+      <p>
+        © <span id="currentYear"></span>
+        Pranto Barai. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+
+  <div
+    class="lightbox"
+    id="imageLightbox"
+  >
+    <button
+      class="lightbox-close"
+      id="lightboxClose"
+      aria-label="Close image"
+    >
+      ×
+    </button>
+
+    <img
+      id="lightboxImage"
+      src=""
+      alt="Image preview"
+    >
+  </div>
+
+  <!-- TOAST -->
+
+  <div
+    class="toast"
+    id="toast"
+  ></div>
+
+  <script>
+    const pageLoader = document.getElementById("pageLoader");
+    const menuButton = document.getElementById("menuButton");
+    const navMenu = document.getElementById("navMenu");
+    const currentYear = document.getElementById("currentYear");
+
+    const photoUpload = document.getElementById("photoUpload");
+    const videoUpload = document.getElementById("videoUpload");
+    const photoPreview = document.getElementById("photoPreview");
+    const videoPreview = document.getElementById("videoPreview");
+
+    const imageLightbox = document.getElementById("imageLightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxClose = document.getElementById("lightboxClose");
+
+    const toast = document.getElementById("toast");
+
+    currentYear.textContent = new Date().getFullYear();
+
+    /* LOADER */
+
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        pageLoader.classList.add("hide");
+      }, 650);
+    });
+
+    /* MOBILE MENU */
+
+    menuButton.addEventListener("click", () => {
+      navMenu.classList.toggle("open");
+      document.body.classList.toggle("menu-open");
+
+      const icon = menuButton.querySelector("i");
+
+      if (navMenu.classList.contains("open")) {
+        icon.className = "fa-solid fa-xmark";
+      } else {
+        icon.className = "fa-solid fa-bars";
+      }
+    });
+
+    document.querySelectorAll(".nav-menu a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("open");
+        document.body.classList.remove("menu-open");
+
+        const icon = menuButton.querySelector("i");
+        icon.className = "fa-solid fa-bars";
+      });
+    });
+
+    /* REVEAL ANIMATION */
+
+    const revealItems = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+    revealItems.forEach((item) => {
+      revealObserver.observe(item);
+    });
+
+    /* ACTIVE NAVIGATION */
+
+    const pageSections = document.querySelectorAll(
+      "section[id]"
+    );
+
+    const navigationLinks = document.querySelectorAll(
+      ".nav-menu a"
+    );
+
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          navigationLinks.forEach((link) => {
+            link.classList.remove("active");
+
+            if (
+              link.getAttribute("href") ===
+              "#" + entry.target.id
+            ) {
+              link.classList.add("active");
             }
+          });
+        });
+      },
+      {
+        rootMargin: "-35% 0px -55% 0px"
+      }
+    );
+
+    pageSections.forEach((section) => {
+      sectionObserver.observe(section);
+    });
+
+    /* LIKE */
+
+    function toggleLike(button) {
+      const icon = button.querySelector("i");
+      const countElement = button.querySelector(".like-count");
+
+      let count = Number(countElement.textContent);
+
+      if (button.classList.contains("liked")) {
+        button.classList.remove("liked");
+        icon.className = "fa-regular fa-heart";
+        countElement.textContent = Math.max(0, count - 1);
+      } else {
+        button.classList.add("liked");
+        icon.className = "fa-solid fa-heart";
+        countElement.textContent = count + 1;
+      }
+    }
+
+    /* SAVE */
+
+    function toggleSave(button) {
+      const icon = button.querySelector("i");
+
+      if (button.classList.contains("saved")) {
+        button.classList.remove("saved");
+        icon.className = "fa-regular fa-bookmark";
+      } else {
+        button.classList.add("saved");
+        icon.className = "fa-solid fa-bookmark";
+      }
+    }
+
+    /* COMMENT TOGGLE */
+
+    function toggleComment(id) {
+      const commentBox = document.getElementById(id);
+      commentBox.classList.toggle("show");
+    }
+
+    /* ADD COMMENT */
+
+    function addComment(inputId, listId) {
+      const input = document.getElementById(inputId);
+      const list = document.getElementById(listId);
+      const text = input.value.trim();
+
+      if (!text) {
+        showToast("আগে comment লিখুন");
+        return;
+      }
+
+      const comment = document.createElement("div");
+      comment.className = "comment-item";
+
+      const strong = document.createElement("strong");
+      strong.textContent = "You: ";
+
+      const commentText = document.createTextNode(text);
+
+      comment.appendChild(strong);
+      comment.appendChild(commentText);
+      list.appendChild(comment);
+
+      input.value = "";
+      showToast("Comment যোগ হয়েছে");
+    }
+
+    /* SHARE */
+
+    function sharePost(url) {
+      if (navigator.share) {
+        navigator.share({
+          title: "Pranto Barai Content",
+          url: url
+        }).catch(() => {});
+      } else {
+        navigator.clipboard
+          .writeText(url)
+          .then(() => {
+            showToast("Link clipboard-এ copy হয়েছে");
+          })
+          .catch(() => {
+            showToast("Link copy করা যায়নি");
+          });
+      }
+    }
+
+    /* PHOTO PREVIEW */
+
+    photoUpload.addEventListener("change", (event) => {
+      const files = Array.from(event.target.files);
+
+      files.forEach((file) => {
+        if (!file.type.startsWith("image/")) {
+          showToast("শুধুমাত্র image file নির্বাচন করুন");
+          return;
         }
 
-        // Save Button Toggle
-        function toggleSave(btn) {
-            const icon = btn.querySelector('i');
-            if (btn.classList.contains('saved')) {
-                btn.classList.remove('saved');
-                icon.className = 'fa-regular fa-bookmark';
-            } else {
-                btn.classList.add('saved');
-                icon.className = 'fa-solid fa-bookmark';
-            }
+        const reader = new FileReader();
+
+        reader.onload = (loadEvent) => {
+          const item = document.createElement("div");
+          item.className = "media-item";
+
+          const image = document.createElement("img");
+          image.src = loadEvent.target.result;
+          image.alt = file.name;
+
+          image.addEventListener("click", () => {
+            lightboxImage.src = loadEvent.target.result;
+            imageLightbox.classList.add("show");
+            document.body.classList.add("menu-open");
+          });
+
+          item.appendChild(image);
+          photoPreview.appendChild(item);
+        };
+
+        reader.readAsDataURL(file);
+      });
+
+      photoUpload.value = "";
+      showToast("Photo preview যোগ হয়েছে");
+    });
+
+    /* VIDEO PREVIEW */
+
+    videoUpload.addEventListener("change", (event) => {
+      const files = Array.from(event.target.files);
+
+      files.forEach((file) => {
+        if (!file.type.startsWith("video/")) {
+          showToast("শুধুমাত্র video file নির্বাচন করুন");
+          return;
         }
 
-        // Toggle Comment Box
-        function toggleComment(id) {
-            const el = document.getElementById(id);
-            el.style.display = (el.style.display === 'block') ? 'none' : 'block';
-        }
+        const videoUrl = URL.createObjectURL(file);
 
-        // Add Comment Functionality
-        function addComment(inputId, listId) {
-            const input = document.getElementById(inputId);
-            const list = document.getElementById(listId);
+        const item = document.createElement("div");
+        item.className = "media-item";
 
-            if (input.value.trim() !== "") {
-                const newComment = document.createElement('div');
-                newComment.className = 'comment-item';
-                newComment.innerHTML = `<strong>You:</strong> ${input.value}`;
-                list.appendChild(newComment);
-                input.value = '';
-            }
-        }
+        const video = document.createElement("video");
+        video.src = videoUrl;
+        video.controls = true;
+        video.preload = "metadata";
 
-        // Native Share Functionality
-        function sharePost(url) {
-            if (navigator.share) {
-                navigator.share({
-                    title: 'Check out Pranto Barai Content',
-                    url: url
-                }).catch(() => {});
-            } else {
-                navigator.clipboard.writeText(url);
-                alert('Link Copied to Clipboard!');
-            }
-        }
-    </script>
+        item.appendChild(video);
+        videoPreview.appendChild(item);
+      });
+
+      videoUpload.value = "";
+      showToast("Video preview যোগ হয়েছে");
+    });
+
+    /* LIGHTBOX */
+
+    function closeLightbox() {
+      imageLightbox.classList.remove("show");
+      document.body.classList.remove("menu-open");
+      lightboxImage.src = "";
+    }
+
+    lightboxClose.addEventListener("click", closeLightbox);
+
+    imageLightbox.addEventListener("click", (event) => {
+      if (event.target === imageLightbox) {
+        closeLightbox();
+      }
+    });
+
+    /* TOAST */
+
+    let toastTimer;
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add("show");
+
+      clearTimeout(toastTimer);
+
+      toastTimer = setTimeout(() => {
+        toast.classList.remove("show");
+      }, 2600);
+    }
+
+    /* ESCAPE */
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeLightbox();
+
+        navMenu.classList.remove("open");
+        document.body.classList.remove("menu-open");
+
+        const icon = menuButton.querySelector("i");
+        icon.className = "fa-solid fa-bars";
+      }
+    });
+  </script>
+
 </body>
 </html>
