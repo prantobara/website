@@ -8,7 +8,7 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>Pranto Pranto  | Official Website</title>
+  <title>Pranto Barai | Official Website</title>
 
   <meta
     name="description"
@@ -759,7 +759,7 @@
 
     .game-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
     }
 
@@ -791,10 +791,6 @@
 
     .game-cover-purple {
       background: linear-gradient(135deg, #6d28d9, #c084fc);
-    }
-
-    .game-cover-green {
-      background: linear-gradient(135deg, #15803d, #4ade80);
     }
 
     .game-body {
@@ -1101,7 +1097,7 @@
       }
 
       .game-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
       }
 
       .hero-visual {
@@ -1160,84 +1156,12 @@
         padding: 70px 0;
       }
     }
-
-    @media (max-width: 480px) {
-      .container {
-        width: min(94%, 1180px);
-      }
-
-      .hero h1 {
-        font-size: 42px;
-      }
-
-      .hero-description {
-        font-size: 16px;
-      }
-
-      .profile-card {
-        width: 265px;
-      }
-
-      .profile-img-box {
-        width: 160px;
-        height: 160px;
-      }
-
-      .ring-one {
-        width: 300px;
-        height: 300px;
-      }
-
-      .ring-two {
-        width: 350px;
-        height: 210px;
-      }
-
-      .floating-one {
-        top: 32px;
-        left: 0;
-      }
-
-      .floating-two {
-        top: 145px;
-        right: 0;
-      }
-
-      .floating-three {
-        bottom: 30px;
-        left: 0;
-      }
-
-      .action-btn {
-        font-size: 12px;
-      }
-
-      .comment-input-box {
-        flex-direction: column;
-      }
-
-      .comment-input-box .btn {
-        width: 100%;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
-        scroll-behavior: auto !important;
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-      }
-    }
   </style>
 </head>
 
 <body>
 
   <!-- LOADER -->
-
   <div id="pageLoader">
     <div class="loader-logo">P</div>
     <div class="loader-bar"></div>
@@ -1245,10 +1169,8 @@
   </div>
 
   <!-- HEADER -->
-
   <header class="site-header">
     <div class="container header-inner">
-
       <a href="#home" class="logo">
         <span class="logo-mark">P</span>
         Pranto official<span>.</span>
@@ -1264,968 +1186,255 @@
       </nav>
 
       <div class="nav-actions">
-        <button
-          class="nav-button menu-button"
-          id="menuButton"
-          aria-label="Open menu"
-        >
+        <button class="nav-button menu-button" id="menuButton" aria-label="Open menu">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
-
     </div>
   </header>
 
   <main>
 
     <!-- HERO -->
-
     <section class="hero" id="home">
       <div class="container hero-grid">
-
         <div class="hero-content reveal">
-
           <div class="online-badge">
             <span class="online-dot"></span>
             Welcome to my personal portal
           </div>
 
-          <h1>
-            Hi, I'm
-            <span>Pranto official </span>
-          </h1>
+          <h1>Hi, I'm <span>Pranto official</span></h1>
 
           <p class="hero-description">
-            আমার personal website-এ স্বাগতম।
-            এখানে আমার social links, photos, videos এবং games দেখতে পারবেন।
+            আমার personal website-এ স্বাগতম। এখানে আমার social links, photos, videos এবং games দেখতে পারবেন।
           </p>
 
           <div class="hero-actions">
             <a href="#contact" class="btn">
-              <i class="fa-solid fa-envelope"></i>
-              Contact Me
+              <i class="fa-solid fa-envelope"></i> Contact Me
             </a>
-
-            <a
-              href="CV.pdf"
-              download
-              class="btn btn-outline"
-            >
-              <i class="fa-solid fa-download"></i>
-              Download CV
+            <a href="CV.pdf" download class="btn btn-outline">
+              <i class="fa-solid fa-download"></i> Download CV
             </a>
           </div>
 
           <div class="social-links">
-            <a
-              href="https://www.facebook.com/share/1DPjtHLRmh/"
-              target="_blank"
-              rel="noopener"
-              title="Facebook"
-            >
+            <a href="https://www.facebook.com/share/1DPjtHLRmh/" target="_blank" rel="noopener" title="Facebook">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
-
-            <a
-              href="https://www.youtube.com/@PrantoBarai-d5n"
-              target="_blank"
-              rel="noopener"
-              title="YouTube"
-            >
+            <a href="https://www.youtube.com/@PrantoBarai-d5n" target="_blank" rel="noopener" title="YouTube">
               <i class="fa-brands fa-youtube"></i>
             </a>
-
-            <a
-              href="https://tiktok.com/@pb.pran0"
-              target="_blank"
-              rel="noopener"
-              title="TikTok"
-            >
+            <a href="https://tiktok.com/@pb.pran0" target="_blank" rel="noopener" title="TikTok">
               <i class="fa-brands fa-tiktok"></i>
             </a>
           </div>
-
         </div>
 
         <div class="hero-visual reveal">
-
           <div class="ring ring-one"></div>
           <div class="ring ring-two"></div>
 
           <div class="profile-card">
-
             <div class="profile-top">
               <span class="profile-status">
-                <i class="fa-solid fa-circle"></i>
-                Personal Hub
+                <i class="fa-solid fa-circle"></i> Personal Hub
               </span>
-
               <span>2026</span>
             </div>
 
             <div class="profile-img-box">
-              <img
-                src="profile.png"
-                alt="Pranto official "
-                class="profile-img"
-                onerror="
-                  this.style.display='none';
-                  document.getElementById('profilePlaceholder').style.display='flex';
-                "
-              >
-
-              <div
-                class="profile-placeholder"
-                id="profilePlaceholder"
-              >
-                P
-              </div>
+              <img src="profile.png" alt="Pranto official" class="profile-img" onerror="this.style.display='none'; document.getElementById('profilePlaceholder').style.display='flex';">
+              <div class="profile-placeholder" id="profilePlaceholder">P</div>
             </div>
 
-            <h2>Pranto official </h2>
+            <h2>Pranto official</h2>
             <p>Content Creator & Video Producer</p>
-
-            <div class="profile-note">
-              Photos • Videos • Games
-            </div>
-
+            <div class="profile-note">Photos • Videos • Games</div>
           </div>
 
-          <div class="floating-label floating-one">
-            📸 My Photos
-          </div>
-
-          <div class="floating-label floating-two">
-            🎬 My Videos
-          </div>
-
-          <div class="floating-label floating-three">
-            🎮 My Games
-          </div>
-
+          <div class="floating-label floating-one">📸 My Photos</div>
+          <div class="floating-label floating-two">🎬 My Videos</div>
+          <div class="floating-label floating-three">🎮 My Games</div>
         </div>
-
       </div>
     </section>
 
     <!-- ABOUT -->
-
     <section id="about">
       <div class="container">
-
         <div class="section-heading reveal">
           <span class="section-label">ABOUT ME</span>
           <h2 class="section-title">About Me</h2>
-          <p class="section-subtitle">
-            আমার সম্পর্কে কিছু সাধারণ তথ্য।
-          </p>
+          <p class="section-subtitle">আমার সম্পর্কে কিছু সাধারণ তথ্য।</p>
         </div>
 
         <div class="about-grid">
-
           <div class="glass-card about-card reveal">
             <h3>Welcome to my website</h3>
-
-            <p>
-              এটি আমার personal portal। এখানে আমার content,
-              social media এবং ব্যক্তিগত project-এর তথ্য পাওয়া যাবে।
-            </p>
-
-            <p>
-              নতুন ছবি, ভিডিও এবং game link আমি এই website-এ যোগ করতে পারব।
-            </p>
-
-            <a href="#media" class="btn btn-small btn-purple">
-              View My Media
-            </a>
+            <p>এটি আমার personal portal। এখানে আমার content, social media এবং ব্যক্তিগত project-এর তথ্য পাওয়া যাবে।</p>
+            <a href="#media" class="btn btn-small btn-purple">View My Media</a>
           </div>
 
           <div class="glass-card about-card reveal">
             <h3>Personal Information</h3>
-
             <div class="personal-info">
               <div class="personal-row">
                 <span>Name</span>
                 <span>Pranto Barai</span>
               </div>
-
               <div class="personal-row">
                 <span>Focus</span>
-                <span>Content Creation</span>
+                <span>Content Creation & Gaming</span>
               </div>
-
               <div class="personal-row">
                 <span>Location</span>
                 <span>Gopalganj, Bangladesh</span>
               </div>
-
-              <div class="personal-row">
-                <span>Website</span>
-                <span>Personal Portal</span>
-              </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
 
     <!-- MEDIA -->
-
     <section id="media">
       <div class="container">
-
         <div class="section-heading reveal">
           <span class="section-label">MY MEDIA</span>
           <h2 class="section-title">Photos & Videos</h2>
-          <p class="section-subtitle">
-        
-          </p>
         </div>
-
-        <div class="media-grid">
-
-          <!-- PHOTO -->
-
-          <div class="glass-card media-card reveal">
-            <h3>
-              <i class="fa-solid fa-image"></i>
-              My Photos
-            </h3>
-
-            <p>
-  
-            </p>
-
-            <div class="media-gallery">
-
-              <div class="media-item">
-                <img src="photo-2.jpg"
-
-                  alt="Pranto photo 1"
-                  onerror="this.parentElement.classList.add('hidden')"
-                >
-              </div>
-
-              <div class="media-item">
-                <img
-                  src="photo-2.jpg"
-                  alt="Pranto photo 2"
-                  onerror="this.parentElement.classList.add('hidden')"
-                >
-              </div>
-
-              <div class="media-item">
-                <img
-                  src="photo-3.jpg"
-                  alt="Pranto photo 3"
-                  onerror="this.parentElement.classList.add('hidden')"
-                >
-              </div>
-
-              <div class="media-empty">
-                `images/photo-1.jpg`, `photo-2.jpg`
-                অথবা `photo-3.jpg` file যোগ করুন।
-              </div>
-
-            </div>
-
-            <div class="media-actions">
-              <label
-                for="photoUpload"
-                class="btn btn-small btn-purple"
-              >
-                <i class="fa-solid fa-upload"></i>
-                Preview Photo
-              </label>
-
-              <input
-                type="file"
-                id="photoUpload"
-                accept="image/*"
-                multiple
-                hidden
-              >
-            </div>
-
-            <div
-              class="media-gallery"
-              id="photoPreview"
-              style="margin-top: 15px;"
-            ></div>
-
-            <div class="upload-note">
-              Preview button দিয়ে select করা ছবি শুধু আপনার browser-এ দেখা যাবে।
-              permanent করতে GitHub-এর `images` folder-এ upload
-            </div>
-          </div>
-
-          <!-- VIDEO -->
-
-          <div class="glass-card media-card reveal">
-            <h3>
-              <i class="fa-solid fa-video"></i>
-              My Videos
-            </h3>
-
-            <p>
-              MP4 video `videos` folder-এ রেখে নিচের মতো link দিন।
-            </p>
-
-            <div class="media-gallery">
-
-              <div class="media-item">
-                <video controls preload="metadata">
-                  <source
-                    src="videos/video-1.mp4"
-                    type="video/mp4"
-                  >
-                  আপনার browser video support করে না।
-                </video>
-              </div>
-
-              <div class="media-item">
-                <video controls preload="metadata">
-                  <source
-                    src="videos/video-2.mp4"
-                    type="video/mp4"
-                  >
-                  আপনার browser video support করে না।
-                </video>
-              </div>
-
-              <div class="media-empty">
-                `videos/video-1.mp4` অথবা
-                `videos/video-2.mp4` file যোগ করুন।
-              </div>
-
-            </div>
-
-            <div class="media-actions">
-              <label
-                for="videoUpload"
-                class="btn btn-small btn-purple"
-              >
-                <i class="fa-solid fa-upload"></i>
-                Preview Video
-              </label>
-
-              <input
-                type="file"
-                id="videoUpload"
-                accept="video/*"
-                multiple
-                hidden
-              >
-            </div>
-
-            <div
-              id="videoPreview"
-              class="media-gallery"
-              style="margin-top: 15px;"
-            ></div>
-
-            <div class="upload-note">
-              বড় video GitHub-এ না রেখে YouTube-এ upload করে embed link ব্যবহার করা ভালো।
-            </div>
-          </div>
-
-        </div>
-
-        <!-- YOUTUBE EMBED -->
-
-        <div
-          class="glass-card media-card reveal"
-          style="margin-top: 20px;"
-        >
-          <h3>
-            <i class="fa-brands fa-youtube"></i>
-            YouTube Video
-          </h3>
-
-          <p>
-            নিচের `VIDEO_ID`-এর জায়গায় আপনার YouTube video ID বসান।
-          </p>
-
-          <div
-            style="
-              position: relative;
-              width: 100%;
-              padding-bottom: 56.25%;
-              overflow: hidden;
-              border-radius: 15px;
-              background: #020617;
-            "
-          >
-            <iframe
-              src="https://www.youtube.com/embed/VIDEO_ID"
-              title="Pranto Barai YouTube Video"
-              allowfullscreen
-              style="
-                position: absolute;
-                inset: 0;
-                width: 100%;
-                height: 100%;
-                border: 0;
-              "
-            ></iframe>
-          </div>
-
-          <div class="upload-note">
-            আপনার YouTube link যদি হয়:
-            `https://www.youtube.com/watch?v=ABC123`,
-            তাহলে embed URL হবে:
-            `https://www.youtube.com/embed/ABC123`
-          </div>
-        </div>
-
       </div>
     </section>
 
-    <!-- GAMES -->
-
+    <!-- GAMES SECTION (UPDATED WITH 2 GAMES & DOWNLOAD OPTIONS) -->
     <section id="games">
       <div class="container">
-
         <div class="section-heading reveal">
           <span class="section-label">MY GAMES</span>
-          <h2 class="section-title">Games</h2>
+          <h2 class="section-title">Games Collection</h2>
           <p class="section-subtitle">
-            নিজের game খেলুন, download করুন অথবা external game link যোগ করুন।
+            নিচে আপনার দুটি অসাধারণ গেমিং প্রজেক্ট দেওয়া হলো। যেকেউ গেমগুলো অনলাইনে খেলতে পারবে অথবা ডাউনলোড করতে পারবে!
           </p>
         </div>
 
         <div class="game-grid">
 
-          <!-- BROWSER GAME -->
-
+          <!-- GAME 1: Reimagined Telegram Game -->
           <article class="game-card reveal">
-
             <div class="game-cover game-cover-blue">
-              🧠
+              💬
             </div>
-
             <div class="game-body">
-              <h3>My Browser Game</h3>
-
+              <h3>Reimagined Telegram App / Game</h3>
               <p>
-                আপনার game folder-এর index.html সরাসরি open হবে।
+                আপনার তৈরি করা Reimagined Telegram প্রজেক্টটি সরাসরি ব্রাউজারে খেলুন অথবা গেম ফাইলটি উপভোগ করুন।
               </p>
-
               <div class="game-actions">
                 <a
-                  href="games/my-game/index.html"
+                  href="https://prantopb617-debug.github.io/reimagined-telegram/"
+                  target="_blank"
+                  rel="noopener"
                   class="btn btn-small btn-purple"
                 >
                   <i class="fa-solid fa-gamepad"></i>
                   Play Game
                 </a>
-
-                <button
-                  class="btn btn-small btn-outline copy-link"
-                  data-link="games/my-game/index.html"
-                >
-                  Copy Link
-                </button>
-              </div>
-            </div>
-
-          </article>
-
-          <!-- APK GAME -->
-
-          <article class="game-card reveal">
-
-            <div class="game-cover game-cover-purple">
-              🎮
-            </div>
-
-            <div class="game-body">
-              <h3>Android Game</h3>
-
-              <p>
-                APK file download করার জন্য এই button ব্যবহার করুন।
-              </p>
-
-              <div class="game-actions">
                 <a
-                  href="downloads/my-game.apk"
-                  download
+                  href="https://github.com/prantopb617-debug/reimagined-telegram/archive/refs/heads/main.zip"
                   class="btn btn-small btn-green"
                 >
                   <i class="fa-solid fa-download"></i>
-                  Download APK
+                  Download Source
                 </a>
               </div>
             </div>
-
           </article>
 
-          <!-- EXTERNAL GAME -->
-
+          <!-- GAME 2: My Neon Game -->
           <article class="game-card reveal">
-
-            <div class="game-cover game-cover-green">
-              🚀
+            <div class="game-cover game-cover-purple">
+              ⚡
             </div>
-
             <div class="game-body">
-              <h3>External Game</h3>
-
+              <h3>My Neon Game</h3>
               <p>
-                অন্য website-এর game link এখানে বসান।
+                রোমাঞ্চকর নিয়ন থিমযুক্ত এই গেমটি অনলাইনে খেলুন বা বন্ধুদের সাথে শেয়ার ও ডাউনলোড করুন।
               </p>
-
               <div class="game-actions">
                 <a
-                  href="https://example.com"
+                  href="https://prantopb617-debug.github.io/my-neon-game/"
                   target="_blank"
                   rel="noopener"
+                  class="btn btn-small btn-purple"
+                >
+                  <i class="fa-solid fa-gamepad"></i>
+                  Play Game
+                </a>
+                <a
+                  href="https://github.com/prantopb617-debug/my-neon-game/archive/refs/heads/main.zip"
                   class="btn btn-small btn-green"
                 >
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  Open Game
+                  <i class="fa-solid fa-download"></i>
+                  Download Source
                 </a>
               </div>
             </div>
-
           </article>
 
         </div>
-
-        <div class="upload-note" style="margin-top: 22px;">
-          Browser game-এর link:
-          `games/my-game/index.html`
-          <br>
-          APK link:
-          `downloads/my-game.apk`
-          <br>
-          External game-এর link:
-          `https://example.com`
-        </div>
-
       </div>
     </section>
 
     <!-- SOCIAL FEEDS -->
-
     <section id="social-feeds">
       <div class="container">
-
         <div class="section-heading reveal">
           <span class="section-label">SOCIAL MEDIA</span>
           <h2 class="section-title">Live Content Feed</h2>
-          <p class="section-subtitle">
-            আপনার social media profile-এর link এবং basic interaction।
-          </p>
         </div>
-
-        <div class="glass-card feed-container reveal">
-
-          <h3 class="feed-title youtube-title">
-            <i class="fa-brands fa-youtube"></i>
-            Latest YouTube Content
-          </h3>
-
-          <div class="feed-placeholder">
-            YouTube channel দেখতে নিচের button ব্যবহার করুন।
-          </div>
-
-          <div class="action-bar">
-            <button
-              class="action-btn"
-              onclick="toggleLike(this)"
-            >
-              <i class="fa-regular fa-heart"></i>
-              <span class="like-count">124</span>
-            </button>
-
-            <button
-              class="action-btn"
-              onclick="toggleComment('youtubeComment')"
-            >
-              <i class="fa-regular fa-comment"></i>
-              Comment
-            </button>
-
-            <button
-              class="action-btn"
-              onclick="sharePost('https://www.youtube.com/@PrantoBarai-d5n')"
-            >
-              <i class="fa-solid fa-share"></i>
-              Share
-            </button>
-
-            <button
-              class="action-btn"
-              onclick="toggleSave(this)"
-            >
-              <i class="fa-regular fa-bookmark"></i>
-              Save
-            </button>
-          </div>
-
-          <div
-            class="comment-section"
-            id="youtubeComment"
-          >
-            <div class="comment-input-box">
-              <input
-                type="text"
-                id="youtubeCommentInput"
-                placeholder="Write a comment..."
-              >
-
-              <button
-                class="btn btn-small"
-                onclick="
-                  addComment(
-                    'youtubeCommentInput',
-                    'youtubeCommentList'
-                  )
-                "
-              >
-                Post
-              </button>
-            </div>
-
-            <div
-              class="comment-list"
-              id="youtubeCommentList"
-            ></div>
-          </div>
-
-          <div style="margin-top: 18px; text-align: center;">
-            <a
-              href="https://www.youtube.com/@PrantoBarai-d5n"
-              target="_blank"
-              rel="noopener"
-              class="btn btn-small"
-            >
-              Open YouTube Channel
-            </a>
-          </div>
-
-        </div>
-
-        <div class="feed-grid">
-
-          <div class="glass-card feed-box reveal">
-
-            <div>
-              <h3 class="feed-title facebook-title">
-                <i class="fa-brands fa-facebook"></i>
-                Facebook Updates
-              </h3>
-
-              <div class="feed-placeholder">
-                Facebook profile দেখতে button চাপুন।
-              </div>
-            </div>
-
-            <div>
-              <div class="action-bar">
-                <button
-                  class="action-btn"
-                  onclick="toggleLike(this)"
-                >
-                  <i class="fa-regular fa-heart"></i>
-                  <span class="like-count">89</span>
-                </button>
-
-                <button
-                  class="action-btn"
-                  onclick="toggleComment('facebookComment')"
-                >
-                  <i class="fa-regular fa-comment"></i>
-                  Comment
-                </button>
-
-                <button
-                  class="action-btn"
-                  onclick="sharePost('https://www.facebook.com/share/1DPjtHLRmh/')"
-                >
-                  <i class="fa-solid fa-share"></i>
-                  Share
-                </button>
-
-                <button
-                  class="action-btn"
-                  onclick="toggleSave(this)"
-                >
-                  <i class="fa-regular fa-bookmark"></i>
-                  Save
-                </button>
-              </div>
-
-              <div
-                class="comment-section"
-                id="facebookComment"
-              >
-                <div class="comment-input-box">
-                  <input
-                    type="text"
-                    id="facebookCommentInput"
-                    placeholder="Write a comment..."
-                  >
-
-                  <button
-                    class="btn btn-small"
-                    onclick="
-                      addComment(
-                        'facebookCommentInput',
-                        'facebookCommentList'
-                      )
-                    "
-                  >
-                    Post
-                  </button>
-                </div>
-
-                <div
-                  class="comment-list"
-                  id="facebookCommentList"
-                ></div>
-              </div>
-
-              <div style="margin-top: 18px; text-align: center;">
-                <a
-                  href="https://www.facebook.com/share/1DPjtHLRmh/"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-small btn-purple"
-                >
-                  Open Facebook
-                </a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="glass-card feed-box reveal">
-
-            <div>
-              <h3 class="feed-title tiktok-title">
-                <i class="fa-brands fa-tiktok"></i>
-                TikTok Reels
-              </h3>
-
-              <div class="feed-placeholder">
-                TikTok profile দেখতে button চাপুন।
-              </div>
-            </div>
-
-            <div>
-              <div class="action-bar">
-                <button
-                  class="action-btn"
-                  onclick="toggleLike(this)"
-                >
-                  <i class="fa-regular fa-heart"></i>
-                  <span class="like-count">210</span>
-                </button>
-
-                <button
-                  class="action-btn"
-                  onclick="toggleComment('tiktokComment')"
-                >
-                  <i class="fa-regular fa-comment"></i>
-                  Comment
-                </button>
-
-                <button
-                  class="action-btn"
-                  onclick="sharePost('https://tiktok.com/@pb.pran0')"
-                >
-                  <i class="fa-solid fa-share"></i>
-                  Share
-                </button>
-
-                <button
-                  class="action-btn"
-                  onclick="toggleSave(this)"
-                >
-                  <i class="fa-regular fa-bookmark"></i>
-                  Save
-                </button>
-              </div>
-
-              <div
-                class="comment-section"
-                id="tiktokComment"
-              >
-                <div class="comment-input-box">
-                  <input
-                    type="text"
-                    id="tiktokCommentInput"
-                    placeholder="Write a comment..."
-                  >
-
-                  <button
-                    class="btn btn-small"
-                    onclick="
-                      addComment(
-                        'tiktokCommentInput',
-                        'tiktokCommentList'
-                      )
-                    "
-                  >
-                    Post
-                  </button>
-                </div>
-
-                <div
-                  class="comment-list"
-                  id="tiktokCommentList"
-                ></div>
-              </div>
-
-              <div style="margin-top: 18px; text-align: center;">
-                <a
-                  href="https://tiktok.com/@pb.pran0"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-small btn-purple"
-                >
-                  Open TikTok
-                </a>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
       </div>
     </section>
 
     <!-- CONTACT -->
-
     <section id="contact">
       <div class="container">
-
         <div class="section-heading reveal">
           <span class="section-label">CONTACT ME</span>
           <h2 class="section-title">Contact Me</h2>
-          <p class="section-subtitle">
-            নিচের form ব্যবহার করে message পাঠাতে পারেন।
-          </p>
         </div>
 
         <div class="glass-card contact-card reveal">
-
-          <form
-            action="https://formsubmit.co/Prantobarai866@gmail.com"
-            method="POST"
-          >
-
-            <input
-              type="hidden"
-              name="_subject"
-              value="New message from Pranto Barai Website"
-            >
-
-            <input
-              type="hidden"
-              name="_captcha"
-              value="false"
-            >
-
-            <input
-              type="hidden"
-              name="_template"
-              value="table"
-            >
-
-            <input
-              type="hidden"
-              name="_next"
-              value="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/#contact"
-            >
+          <form action="https://formsubmit.co/Prantobarai866@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New message from Pranto Barai Website">
+            <input type="hidden" name="_captcha" value="false">
 
             <div class="form-group">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                required
-              >
+              <input type="text" name="name" placeholder="Your Name" required>
             </div>
-
             <div class="form-group">
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              >
+              <input type="email" name="email" placeholder="Your Email" required>
             </div>
-
             <div class="form-group">
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                required
-              ></textarea>
+              <textarea name="message" placeholder="Your Message" required></textarea>
             </div>
-
-            <button
-              type="submit"
-              class="btn"
-              style="width: 100%;"
-            >
-              <i class="fa-solid fa-paper-plane"></i>
-              Send Message
+            <button type="submit" class="btn" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
             </button>
-
           </form>
-
         </div>
-
       </div>
     </section>
 
   </main>
 
   <!-- FOOTER -->
-
   <footer>
     <div class="container">
-      <p>
-        © <span id="currentYear"></span>
-        Pranto Barai. All rights reserved.
-      </p>
+      <p>© <span id="currentYear"></span> Pranto Barai. All rights reserved.</p>
     </div>
   </footer>
-
-  <!-- LIGHTBOX -->
-
-  <div
-    class="lightbox"
-    id="imageLightbox"
-  >
-    <button
-      class="lightbox-close"
-      id="lightboxClose"
-      aria-label="Close image"
-    >
-      ×
-    </button>
-
-    <img
-      id="lightboxImage"
-      src=""
-      alt="Image preview"
-    >
-  </div>
-
-  <!-- TOAST -->
-
-  <div
-    class="toast"
-    id="toast"
-  ></div>
 
   <script>
     const pageLoader = document.getElementById("pageLoader");
@@ -2233,20 +1442,7 @@
     const navMenu = document.getElementById("navMenu");
     const currentYear = document.getElementById("currentYear");
 
-    const photoUpload = document.getElementById("photoUpload");
-    const videoUpload = document.getElementById("videoUpload");
-    const photoPreview = document.getElementById("photoPreview");
-    const videoPreview = document.getElementById("videoPreview");
-
-    const imageLightbox = document.getElementById("imageLightbox");
-    const lightboxImage = document.getElementById("lightboxImage");
-    const lightboxClose = document.getElementById("lightboxClose");
-
-    const toast = document.getElementById("toast");
-
     currentYear.textContent = new Date().getFullYear();
-
-    /* LOADER */
 
     window.addEventListener("load", () => {
       setTimeout(() => {
@@ -2254,291 +1450,13 @@
       }, 650);
     });
 
-    /* MOBILE MENU */
-
     menuButton.addEventListener("click", () => {
       navMenu.classList.toggle("open");
       document.body.classList.toggle("menu-open");
-
       const icon = menuButton.querySelector("i");
-
-      if (navMenu.classList.contains("open")) {
-        icon.className = "fa-solid fa-xmark";
-      } else {
-        icon.className = "fa-solid fa-bars";
-      }
-    });
-
-    document.querySelectorAll(".nav-menu a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navMenu.classList.remove("open");
-        document.body.classList.remove("menu-open");
-
-        const icon = menuButton.querySelector("i");
-        icon.className = "fa-solid fa-bars";
-      });
-    });
-
-    /* REVEAL ANIMATION */
-
-    const revealItems = document.querySelectorAll(".reveal");
-
-    const revealObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            revealObserver.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.12
-      }
-    );
-
-    revealItems.forEach((item) => {
-      revealObserver.observe(item);
-    });
-
-    /* ACTIVE NAVIGATION */
-
-    const pageSections = document.querySelectorAll(
-      "section[id]"
-    );
-
-    const navigationLinks = document.querySelectorAll(
-      ".nav-menu a"
-    );
-
-    const sectionObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            return;
-          }
-
-          navigationLinks.forEach((link) => {
-            link.classList.remove("active");
-
-            if (
-              link.getAttribute("href") ===
-              "#" + entry.target.id
-            ) {
-              link.classList.add("active");
-            }
-          });
-        });
-      },
-      {
-        rootMargin: "-35% 0px -55% 0px"
-      }
-    );
-
-    pageSections.forEach((section) => {
-      sectionObserver.observe(section);
-    });
-
-    /* LIKE */
-
-    function toggleLike(button) {
-      const icon = button.querySelector("i");
-      const countElement = button.querySelector(".like-count");
-
-      let count = Number(countElement.textContent);
-
-      if (button.classList.contains("liked")) {
-        button.classList.remove("liked");
-        icon.className = "fa-regular fa-heart";
-        countElement.textContent = Math.max(0, count - 1);
-      } else {
-        button.classList.add("liked");
-        icon.className = "fa-solid fa-heart";
-        countElement.textContent = count + 1;
-      }
-    }
-
-    /* SAVE */
-
-    function toggleSave(button) {
-      const icon = button.querySelector("i");
-
-      if (button.classList.contains("saved")) {
-        button.classList.remove("saved");
-        icon.className = "fa-regular fa-bookmark";
-      } else {
-        button.classList.add("saved");
-        icon.className = "fa-solid fa-bookmark";
-      }
-    }
-
-    /* COMMENT TOGGLE */
-
-    function toggleComment(id) {
-      const commentBox = document.getElementById(id);
-      commentBox.classList.toggle("show");
-    }
-
-    /* ADD COMMENT */
-
-    function addComment(inputId, listId) {
-      const input = document.getElementById(inputId);
-      const list = document.getElementById(listId);
-      const text = input.value.trim();
-
-      if (!text) {
-        showToast("আগে comment লিখুন");
-        return;
-      }
-
-      const comment = document.createElement("div");
-      comment.className = "comment-item";
-
-      const strong = document.createElement("strong");
-      strong.textContent = "You: ";
-
-      const commentText = document.createTextNode(text);
-
-      comment.appendChild(strong);
-      comment.appendChild(commentText);
-      list.appendChild(comment);
-
-      input.value = "";
-      showToast("Comment যোগ হয়েছে");
-    }
-
-    /* SHARE */
-
-    function sharePost(url) {
-      if (navigator.share) {
-        navigator.share({
-          title: "Pranto Barai Content",
-          url: url
-        }).catch(() => {});
-      } else {
-        navigator.clipboard
-          .writeText(url)
-          .then(() => {
-            showToast("Link clipboard-এ copy হয়েছে");
-          })
-          .catch(() => {
-            showToast("Link copy করা যায়নি");
-          });
-      }
-    }
-
-    /* PHOTO PREVIEW */
-
-    photoUpload.addEventListener("change", (event) => {
-      const files = Array.from(event.target.files);
-
-      files.forEach((file) => {
-        if (!file.type.startsWith("image/")) {
-          showToast("শুধুমাত্র image file নির্বাচন করুন");
-          return;
-        }
-
-        const reader = new FileReader();
-
-        reader.onload = (loadEvent) => {
-          const item = document.createElement("div");
-          item.className = "media-item";
-
-          const image = document.createElement("img");
-          image.src = loadEvent.target.result;
-          image.alt = file.name;
-
-          image.addEventListener("click", () => {
-            lightboxImage.src = loadEvent.target.result;
-            imageLightbox.classList.add("show");
-            document.body.classList.add("menu-open");
-          });
-
-          item.appendChild(image);
-          photoPreview.appendChild(item);
-        };
-
-        reader.readAsDataURL(file);
-      });
-
-      photoUpload.value = "";
-      showToast("Photo preview যোগ হয়েছে");
-    });
-
-    /* VIDEO PREVIEW */
-
-    videoUpload.addEventListener("change", (event) => {
-      const files = Array.from(event.target.files);
-
-      files.forEach((file) => {
-        if (!file.type.startsWith("video/")) {
-          showToast("শুধুমাত্র video file নির্বাচন করুন");
-          return;
-        }
-
-        const videoUrl = URL.createObjectURL(file);
-
-        const item = document.createElement("div");
-        item.className = "media-item";
-
-        const video = document.createElement("video");
-        video.src = videoUrl;
-        video.controls = true;
-        video.preload = "metadata";
-
-        item.appendChild(video);
-        videoPreview.appendChild(item);
-      });
-
-      videoUpload.value = "";
-      showToast("Video preview যোগ হয়েছে");
-    });
-
-    /* LIGHTBOX */
-
-    function closeLightbox() {
-      imageLightbox.classList.remove("show");
-      document.body.classList.remove("menu-open");
-      lightboxImage.src = "";
-    }
-
-    lightboxClose.addEventListener("click", closeLightbox);
-
-    imageLightbox.addEventListener("click", (event) => {
-      if (event.target === imageLightbox) {
-        closeLightbox();
-      }
-    });
-
-    /* TOAST */
-
-    let toastTimer;
-
-    function showToast(message) {
-      toast.textContent = message;
-      toast.classList.add("show");
-
-      clearTimeout(toastTimer);
-
-      toastTimer = setTimeout(() => {
-        toast.classList.remove("show");
-      }, 2600);
-    }
-
-    /* ESCAPE */
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") {
-        closeLightbox();
-
-        navMenu.classList.remove("open");
-        document.body.classList.remove("menu-open");
-
-        const icon = menuButton.querySelector("i");
-        icon.className = "fa-solid fa-bars";
-      }
+      icon.className = navMenu.classList.contains("open") ? "fa-solid fa-xmark" : "fa-solid fa-bars";
     });
   </script>
 
 </body>
-</html>
+  </html>
